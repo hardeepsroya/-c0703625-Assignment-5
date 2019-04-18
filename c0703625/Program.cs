@@ -34,7 +34,14 @@ namespace c0703625
             string nextWord;
 
             for (int y = 0; y < words.Length - 1; y++)
-            
+            {
+                currentWord = words[y];
+
+                nextWord = words[y + 1];
+
+            }
+
+            return currentWord;
         }
 
     }
