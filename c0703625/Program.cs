@@ -10,7 +10,6 @@ namespace c0703625
     {
         static void Main(string[] args)
         {
-
             Program a = new Program();
 
             Console.WriteLine("the longest word is : ");
@@ -29,23 +28,13 @@ namespace c0703625
             int[] wordsLength = new int[wordArrayLength];
 
             foreach (var word in words)
-            {
-
-            }
-
+            { }
             string currentWord = words[0];
 
             string nextWord;
 
             for (int y = 0; y < words.Length - 1; y++)
-            {
-                currentWord = words[y];
-
-                nextWord = words[y + 1];
-
-            }
-
-            return currentWord;
+            
         }
 
     }
