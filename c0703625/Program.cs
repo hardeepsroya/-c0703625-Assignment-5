@@ -10,6 +10,9 @@ namespace c0703625
     {
         static void Main(string[] args)
         {
+            Program a = new Program();
+            Console.WriteLine("the longest word is:");
+            Console.WriteLine(a.MyFunction A("Ada lovelace wrote the first algorithm designed for processing by an analytical engine.")); }
         }
     }
 }
