@@ -26,7 +26,32 @@ namespace c0703625
                 frequency[i] = -1;
             }
             for (i = 0; i < n; i++)
-            
+            {
+                ctr = 1;
+                for (j = i + 1; j < n; j++)
+                {
+                    if (array1[i] == array1[j])
+                    {
+                        ctr++;
+                        frequency[j] = 0;
+                    }
+                }
+
+                if (frequency[i] != 0)
+                {
+                    frequency[i] = ctr;
+                }
+            }
+            Console.Write("\nThe frequency of all elements of the array : \n");
+            for (i = 0; i < n; i++)
+            {
+                if (frequency[i] != 0)
+                {
+                    Console.Write("{0} occurs {1} times\n", array1[i], frequency[i]);
+                }
+            }
+
+
         }
     }
 }
