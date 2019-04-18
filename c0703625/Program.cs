@@ -10,39 +10,23 @@ namespace c0703625
     {
         static void Main(string[] args)
         {
-            Program a = new Program();
+            int[] array1 = new int[100];
+            int[] frequency = new int[100];
+            int n, i, j, ctr;
 
-            Console.WriteLine("the longest word is : ");
 
-            Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first algorithm designed for processing by an Analytical Engine."));
+            Console.Write("Give the input of number of elements to be stored in the array :");
+            n = Convert.ToInt32(Console.ReadLine());
 
-            Console.ReadLine();
-        }
-
-        public String MyFunctionA(string input)
-        {
-            string[] words = input.Split(' ');
-
-            int wordArrayLength = words.Length;
-
-            int[] wordsLength = new int[wordArrayLength];
-
-            foreach (var word in words)
-            { }
-            string currentWord = words[0];
-
-            string nextWord;
-
-            for (int y = 0; y < words.Length - 1; y++)
+            Console.Write("Input {0} elements in the array :\n", n);
+            for (i = 0; i < n; i++)
             {
-                currentWord = words[y];
-
-                nextWord = words[y + 1];
-
+                Console.Write("element - {0} : ", i);
+                array1[i] = Convert.ToInt32(Console.ReadLine());
+                frequency[i] = -1;
             }
-
-            return currentWord;
+            for (i = 0; i < n; i++)
+            
         }
-
     }
 }
